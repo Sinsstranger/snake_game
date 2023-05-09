@@ -1,0 +1,211 @@
+body {
+	padding: 0;
+	margin: 0;
+	float: left;
+	min-width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: rgb(239, 238, 208);
+	font-family: 'Lobster', cursive;
+}
+main {
+	display: flex;
+	width: inherit;
+	flex: 100%;
+}
+.container {
+	background: url(../img/green-glade-quad-wicker.png);
+	margin: 0 auto;
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.wrap {
+	display: flex;
+	background-color: #B1E357;
+	justify-content: center;
+	flex-direction: column;
+}
+.menu-top {
+	display: flex;
+	background: green;
+	padding-left: 10px;
+}
+.food-score {
+	background: url(../img/food.png) center no-repeat;
+	background-size: 22px;
+	width: 26px;
+	height: 32px;
+}
+#score {
+	width: 35px;
+	height: 35px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	color: white;
+}
+.level {
+	display: flex;
+	align-items: center;
+	font-size: 23px;
+	margin-left: 82px;
+	color: white;
+}
+.next-level-score {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	color: greenyellow;
+}
+.next-level {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	color: greenyellow;
+}
+.main-right {
+	display: flex;
+	align-items: center;
+	min-width: 188px;
+	justify-content: flex-end;
+}
+.food-score-right {
+	background-size: 20px;
+	margin-right: 10px;
+}
+.trophy {
+	background: url("../img/trophy.gif") no-repeat center;
+	background-size: 19px;
+	width: 26px;
+	height: 35px;
+}
+#best-score {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	color: white;
+}
+.main-menu {
+	width: 270px;
+	height: 230px;
+	background: linear-gradient(to top, rgba(0,128,0,.6) 1%, rgba(55,124,55,.6) 48%, rgba(177,277,87,.8) 99%);
+	/*background: linear-gradient(to top, rgba(1,1,1,.2) 1%, rgba(1,1,1,.2) 48%,rgba(1,1,1,.2) 99%);*/
+	position: absolute;
+	transition: .2s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+.your-score {
+	position: absolute;
+	top: 10px;
+	font-size: 18px;
+	color: green;
+}
+.difficulty {
+	display: flex;
+	justify-content: center;
+	padding-left: 13px;
+}
+fieldset {
+	position: relative;
+	top: 30px;
+	font-size: 18px;
+	border-color: rgba(177, 255, 87, 0.56);
+	color: white;
+	border-style: dashed;
+}
+legend {
+	position: relative;
+	top: 14px;
+	left: -2px;
+}
+.star {
+	background: url(../img/star.png) no-repeat;
+	background-size: 30px;
+	width: 30px;
+	height: 30px;
+	padding: 4px;
+	cursor: pointer;
+}
+.star-fill {
+	background: url(../img/star.png) no-repeat;
+	background-size: 30px;
+}
+.star-free {
+	background: url(../img/star-free.png) no-repeat;
+	background-size: 30px;
+}
+#snake-field {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;/*  margin: 10px 20px 20px;*/
+}
+#snake-new-game {
+	width: 150px;
+	padding: 15px;
+	color: white;
+	background-color: green;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+}
+.pause {
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	visibility: hidden;
+	position: absolute;
+	z-index: 3;
+}
+.game-table {
+	border-collapse: collapse;
+}
+td.game-table-cell {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #9b9b9b;
+}
+.game-table-cell-color-1 {
+	background-color: white;
+}
+.game-table-cell-color-2 {
+	background-color: lightgoldenrodyellow;
+}
+.food-unit {
+	background: url(../img/food.png) center no-repeat;
+	background-size: 25px;
+}
+.buttons {
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+}
+.wall-unit {
+	background: url(../img/bomb.png) center no-repeat red;
+	background-size: 25px;
+}
+.snake-head {
+	background: url(../img/snakehead2.png) no-repeat center;
+	background-size: 26px;
+}
+.snake-body {
+	background: url(../img/snake-body.png) center no-repeat;
+	background-size: 28px;
+}
+.snake-turn {
+	background: url(../img/turn.png) 0px -3px no-repeat white;
+	background-size: 32px;
+}
+.snake-tale {
+	background: url(../img/snake-tale.png) center no-repeat white;
+	background-size: 30px;
+}
